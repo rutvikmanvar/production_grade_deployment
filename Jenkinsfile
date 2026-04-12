@@ -6,27 +6,27 @@ pipeline {
     stages {
         stage('Pre-build') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('Pre-test') {
             steps {
-                sh 'npm run pretest'
+                bat 'npm run pretest'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }  
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
         stage('Deploy') {
             steps {
-               sh 'npm start'
+               bat 'npm start'
             }
         }
     }
