@@ -8,6 +8,9 @@ app.get('/', (req, res) => {
   res.send('V1');
 });
 
+console.log("Here Alreght");
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+

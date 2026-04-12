@@ -27,7 +27,10 @@ services:
       - "./certificates/letsencrypt:/letsencrypt"
     networks:
       - traefik
+      - project-a-network
       
   network:
     traefik:
       name: traefik
+    project-a-network:
+      name: project-a-network
