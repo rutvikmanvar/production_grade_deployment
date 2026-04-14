@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               bat 'pm2 start app.js --name prod-deploy'
+               bat 'pm2 restart 3'
             }
         }
     }
