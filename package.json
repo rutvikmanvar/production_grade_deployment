@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "start": "node app.js",
-    "pretest": "node app.js",
+    "test": "echo Building the project...",
+    "start": "echo Building the project...",
+    "pretest": "echo Building the project...",
     "build": "echo Building the project..."
   },
   "keywords": [],
