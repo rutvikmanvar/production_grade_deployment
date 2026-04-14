@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               bat 'pm2 restart 3'
+               bat 'npx pm2 restart prod-deploy'
             }
         }
     }
